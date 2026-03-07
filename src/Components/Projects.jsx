@@ -15,8 +15,8 @@ const Projects = () => {
           <h1 className="text-2xl md:text-4xl text-white text-center font-bold">Projects</h1>
           <div className="py-12 px-8 flex flex-wrap gap-5">
               <ProjectCard
-                  title="E-Commerce Website"
-                  main="this is a bloggin website created in next js and used some component library used some component library"
+                  title="Zaptro"
+                  main="A responsive e-commerce website with product browsing, filtering, wishlist, cart management, and order tracking functionality."
                   gitLink={ZapGithub}
                   demoLink={ZapDemo}
               />

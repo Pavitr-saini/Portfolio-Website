@@ -8,7 +8,7 @@ function Navbar() {
     const [openMenu, setOpenMenu] = useState(false)
   return (
    <>
-    <div className='flex w-full h-20 justify-between items-center text-white fixed z-50 top-0 bg-black '>
+    <div className='flex w-full h-20 justify-between items-center text-white  bg-black '>
         <div className='mx-20 text-xl tracking-wide font-bold'>Portfolio</div>
               <img onClick={()=>{setIsOpen(!isOpen); setOpenMenu(!openMenu)}}  className='invert-100 md:hidden mx-5 font-bold transition-all duration-300' src={isOpen ? close : hamburger} alt="" />
               {openMenu && <div

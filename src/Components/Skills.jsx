@@ -9,13 +9,14 @@ import {
     FaChrome,
 } from "react-icons/fa";
 // import { SiTailwindcss, SiVisualstudiocode } from "react-icons/si";
-import { SiTailwindcss } from "react-icons/si";
+import { SiTailwindcss, SiTypescript } from "react-icons/si";
 // import { SiVisualstudiocode } from "react-icons/si";
 import { FaCode } from "react-icons/fa";
 
 const frontendSkills = [
     { name: "HTML5", icon: <FaHtml5 />, color: "text-orange-500" },
     { name: "CSS3", icon: <FaCss3Alt />, color: "text-blue-500" },
+    { name: "TypeScript", icon: <SiTypescript />, color: "text-yellow-400" },
     { name: "JavaScript (ES6+)", icon: <FaJs />, color: "text-yellow-400" },
     { name: "React.js", icon: <FaReact />, color: "text-cyan-400" },
     { name: "Tailwind CSS", icon: <SiTailwindcss />, color: "text-sky-400" },

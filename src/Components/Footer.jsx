@@ -22,11 +22,11 @@ export default function Footer() {
               </li>
               <li className="flex gap-1 items-center">
                   <CiLinkedin />
-                  linkdlin.com/username
+                  <a href="https://www.linkedin.com/in/pavitr-saini-57756a323/">Linkedin</a>
               </li>
               <li className="flex gap-1 items-center">
                   <FaGithub />
-                  github.com/username
+                  <a href="https://github.com/Pavitr-saini">GitHub</a>
               </li>
           </ul>
       </div>
