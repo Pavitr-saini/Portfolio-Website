@@ -2,33 +2,37 @@ import React from 'react'
 import { MdOutlineEmail } from "react-icons/md";
 import { CiLinkedin } from "react-icons/ci";
 import { FaGithub } from "react-icons/fa";
+
 export default function Footer() {
   return (
-      <div
-          id="Footer"
-          className="flex justify-around bg-[#465697] text-white p-10 md:p-12 items-center"
-      >
-          <div>
-              <h1 className="text-2xl md:text-6xl font-bold">Contact</h1>
-              <h3 className="text-sm md:text-2xl font-normal">
-                  Feel Free To reach out!
-              </h3>
-          </div>
+      <footer id="Footer" className="footer">
+          <div className="footer-container">
+              <div className="footer-content">
+                  <h2>Contact Me</h2>
+                  <p>Feel free to reach out for collaborations or just a friendly hello!</p>
+              </div>
 
-          <ul className="text-sm md:text-xl">
-              <li className="flex gap-1 items-center">
-                  <MdOutlineEmail size={20} />
-                  Pavitrsaini2929@gamil.com
-              </li>
-              <li className="flex gap-1 items-center">
-                  <CiLinkedin />
-                  <a href="https://www.linkedin.com/in/pavitr-saini-57756a323/">Linkedin</a>
-              </li>
-              <li className="flex gap-1 items-center">
-                  <FaGithub />
-                  <a href="https://github.com/Pavitr-saini">GitHub</a>
-              </li>
-          </ul>
-      </div>
+              <ul className="footer-links">
+                  <li>
+                      <a href="mailto:Pavitrsaini2929@gmail.com" className="footer-link">
+                          <MdOutlineEmail size={24} className="text-gradient" />
+                          <span>Pavitrsaini2929@gmail.com</span>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="https://www.linkedin.com/in/pavitr-saini-57756a323/" target="_blank" rel="noopener noreferrer" className="footer-link">
+                          <CiLinkedin size={24} className="text-gradient" />
+                          <span>LinkedIn Profile</span>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="https://github.com/Pavitr-saini" target="_blank" rel="noopener noreferrer" className="footer-link">
+                          <FaGithub size={24} className="text-gradient" />
+                          <span>GitHub Profile</span>
+                      </a>
+                  </li>
+              </ul>
+          </div>
+      </footer>
   )
 }

@@ -8,75 +8,53 @@ import {
     FaGithub,
     FaChrome,
 } from "react-icons/fa";
-// import { SiTailwindcss, SiVisualstudiocode } from "react-icons/si";
 import { SiTailwindcss, SiTypescript } from "react-icons/si";
-// import { SiVisualstudiocode } from "react-icons/si";
 import { FaCode } from "react-icons/fa";
 
 const frontendSkills = [
-    { name: "HTML5", icon: <FaHtml5 />, color: "text-orange-500" },
-    { name: "CSS3", icon: <FaCss3Alt />, color: "text-blue-500" },
-    { name: "TypeScript", icon: <SiTypescript />, color: "text-yellow-400" },
-    { name: "JavaScript (ES6+)", icon: <FaJs />, color: "text-yellow-400" },
-    { name: "React.js", icon: <FaReact />, color: "text-cyan-400" },
-    { name: "Tailwind CSS", icon: <SiTailwindcss />, color: "text-sky-400" },
+    { name: "HTML5", icon: <FaHtml5 />, color: "#f97316" },
+    { name: "CSS3", icon: <FaCss3Alt />, color: "#3b82f6" },
+    { name: "TypeScript", icon: <SiTypescript />, color: "#3178c6" },
+    { name: "JavaScript", icon: <FaJs />, color: "#facc15" },
+    { name: "React.js", icon: <FaReact />, color: "#22d3ee" },
+    { name: "Tailwind CSS", icon: <SiTailwindcss />, color: "#38bdf8" },
 ];
 
 const toolsSkills = [
-    { name: "Git", icon: <FaGitAlt />, color: "text-red-500" },
-    { name: "GitHub", icon: <FaGithub />, color: "text-white" },
-    { name: "VS Code", icon: <FaCode />, color: "text-blue-400" },
-    { name: "Chrome DevTools", icon: <FaChrome />, color: "text-green-500" },
+    { name: "Git", icon: <FaGitAlt />, color: "#ef4444" },
+    { name: "GitHub", icon: <FaGithub />, color: "#ffffff" },
+    { name: "VS Code", icon: <FaCode />, color: "#60a5fa" },
+    { name: "DevTools", icon: <FaChrome />, color: "#22c55e" },
 ];
 
 const Skills = () => {
     return (
-        <section id="Skills" className="bg-gray-900 text-white py-16 px-6">
-            <h2 className="text-4xl font-bold text-center mb-12">
-                My <span className="text-blue-500">Skills</span>
-            </h2>
+        <section id="Skills" className="section">
+            <h2 className="section-title">My <span className="text-gradient">Skills</span></h2>
 
-            {/* Frontend Section */}
-            <div className="max-w-6xl mx-auto mb-16">
-                <h3 className="text-2xl font-semibold mb-8 text-blue-400">
-                    💻 Frontend
-                </h3>
-
-                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8">
+            <div className="skills-category">
+                <h3 className="skills-category-title">💻 Frontend</h3>
+                <div className="skills-grid">
                     {frontendSkills.map((skill, index) => (
-                        <div
-                            key={index}
-                            className="bg-gray-800 p-6 rounded-2xl shadow-lg flex flex-col items-center hover:scale-105 transition duration-300"
-                        >
-                            <div className={`text-5xl mb-4 ${skill.color}`}>
+                        <div key={index} className="glass-panel skill-card">
+                            <div className="skill-icon" style={{ color: skill.color }}>
                                 {skill.icon}
                             </div>
-                            <p className="text-lg font-medium text-center">
-                                {skill.name}
-                            </p>
+                            <p className="skill-name">{skill.name}</p>
                         </div>
                     ))}
                 </div>
             </div>
 
-            {/* Tools Section */}
-            <div className="max-w-6xl mx-auto">
-                <h3 className="text-2xl font-semibold mb-8 text-blue-400">
-                    🛠 Tools
-                </h3>
-
-                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
+            <div className="skills-category">
+                <h3 className="skills-category-title">🛠 Tools</h3>
+                <div className="skills-grid">
                     {toolsSkills.map((skill, index) => (
-                        <div
-                            key={index}
-                            className="bg-gray-800 p-6 rounded-2xl shadow-lg flex flex-col items-center hover:scale-105 transition duration-300"
-                        >
-                            <div className={`text-5xl mb-4 ${skill.color}`}>
+                        <div key={index} className="glass-panel skill-card">
+                            <div className="skill-icon" style={{ color: skill.color }}>
                                 {skill.icon}
                             </div>
-                            <p className="text-lg font-medium text-center">
-                                {skill.name}
-                            </p>
+                            <p className="skill-name">{skill.name}</p>
                         </div>
                     ))}
                 </div>
