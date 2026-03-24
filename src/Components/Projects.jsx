@@ -21,19 +21,27 @@ const Projects = () => {
     const TodoGit = "https://github.com/Pavitr-saini/Todo-App"
     const TodoDemoLink = "https://todo-app-nine-inky-30.vercel.app/"
     const TodoGithub = () => {
-        window.open(CurGit, "_blank");
+        window.open(TodoGit, "_blank");
     };
     const TodoDemo = () => {
-        window.open(CurDemoLink, "_blank");
+        window.open(TodoDemoLink, "_blank");
     };
 
     const PassGit = "https://github.com/Pavitr-saini/Password-Generator"
     const PassDemoLink = "https://password-generator-six-sigma.vercel.app/"
     const PassGithub = () => {
-        window.open(zapGit, "_blank");
+        window.open(PassGit, "_blank");
     };
     const PassDemo = () => {
-        window.open(zapDemoLink, "_blank");
+        window.open(PassDemoLink, "_blank");
+    };
+    const CrudGit = "https://github.com/Pavitr-saini/CRUD-Operation"
+    const CrudDemoLink = "https://crud-operation-plum.vercel.app/"
+    const CrudGithub = () => {
+        window.open(CrudGit, "_blank");
+    };
+    const CrudDemo = () => {
+        window.open(CrudDemoLink, "_blank");
     };
   return (
       <section id="Projects" className="section">
@@ -56,6 +64,12 @@ const Projects = () => {
                   main="A Todo List web application built with modern frontend technologies that allows users to add, edit, mark as complete, and delete tasks. The app provides a clean and user-friendly interface to help users track and manage their daily activities."
                   gitLink={TodoGithub}
                   demoLink={TodoDemo}
+              />
+              <ProjectCard
+                  title="CURD Operation"
+                  main="A Password Generator application that generates strong and secure random passwords. Users can customize the password by selecting the length and enabling options for numbers and special characters."
+                  gitLink={CrudGithub}
+                  demoLink={CrudDemo}
               />
               <ProjectCard
                   title="Password-Generator"
